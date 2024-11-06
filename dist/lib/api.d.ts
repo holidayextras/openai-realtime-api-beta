@@ -1,7 +1,7 @@
 export class RealtimeAPI extends RealtimeEventHandler {
     /**
      * Create a new RealtimeAPI instance
-     * @param {{url?: string, apiKey?: string, dangerouslyAllowAPIKeyInBrowser?: boolean, debug?: boolean, extendedWebSocketProtocols: Array<string>}} [settings]
+     * @param {{url?: string, apiKey?: string, dangerouslyAllowAPIKeyInBrowser?: boolean, debug?: boolean, extendedWebSocketProtocols?: Array<string>}} [settings]
      * @returns {RealtimeAPI}
      */
     constructor({ url, apiKey, dangerouslyAllowAPIKeyInBrowser, debug, extendedWebSocketProtocols }?: {
@@ -9,7 +9,7 @@ export class RealtimeAPI extends RealtimeEventHandler {
         apiKey?: string;
         dangerouslyAllowAPIKeyInBrowser?: boolean;
         debug?: boolean;
-        extendedWebSocketProtocols: Array<string>;
+        extendedWebSocketProtocols?: Array<string>;
     });
     defaultUrl: string;
     url: string;
